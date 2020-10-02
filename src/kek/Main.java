@@ -50,6 +50,22 @@ public class Main {
         for (int i = 0; i < plavuniTime.size() ; i++) {
             System.out.println(i + 1  + ". " + plavuniTime.get(i));
         }
+        int check = 0;
+        int a=0;
+        int b=0;
+        for (int i = 0 ;i < plavuniTime.size();i++) {
+            while (check == 0) {
+                if (test.get(a) == plavuniTime.get(b)) {
+                    System.out.println(test.get(a - 1));
+                    System.out.println(plavuniTime.get(b));
+                    check = 1;
+                }
+                a++;
+            }
+            b++;
+            check = 0;
+            a = 0;
+        }
 
     }
 
